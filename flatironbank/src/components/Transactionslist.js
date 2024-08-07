@@ -4,7 +4,7 @@ function TransactionsList({ transactions, searchTerm }) {
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://bankofflatirondata.vercel.app/transactions")
       .then((res) => res.json())
       .then((data) => setFilteredTransactions(data));
   }, []);

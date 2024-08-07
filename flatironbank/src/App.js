@@ -10,7 +10,7 @@ function App() {
 
   //  Added the addTransaction function here to pass it down as a prop
   function addTransaction(transaction) {
-    fetch('http://localhost:3000/transactions', {
+    fetch('https://bankofflatirondata.vercel.app/transactions', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'

@@ -1,7 +1,7 @@
 import React from 'react';
 // Function to post new transactions that would be added
 function AddTransaction(transaction, setTransactions, transactions) {
-  fetch('http://localhost:3000/transactions', {
+  fetch('https://bankofflatirondata.vercel.app/transactions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
