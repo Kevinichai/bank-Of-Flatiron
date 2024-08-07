@@ -5,8 +5,10 @@ function Transactionslist() {
     useEffect(
         ()=>{
             fetch('http://localhost:3000/transactions')
-        }
-    )
+            .then(res =>res.json())
+            .then(data=> setTransactions(data));
+        },[]
+    );
   return (
     <div>Transactionslist</div>
   )
