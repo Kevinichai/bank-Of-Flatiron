@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
 import TransactionsList from './components/Transactionslist';
-import AddTransaction from './components/AddTransaction';
+import addTransaction from './components/AddTransaction';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
