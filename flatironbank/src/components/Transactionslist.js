@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+//function to fetch data that would populate the transaction table
 function Transactionslist() {
     const [transactions, setTransactions] = useState([]);
     useEffect(
